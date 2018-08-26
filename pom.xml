@@ -11,6 +11,10 @@
         <module>../smart-plugin-security</module>
     </modules>
     <packaging>pom</packaging>
+    <properties>
+    <version.cxf>3.0.4</version.cxf>
+    </properties>
+    
     <dependencies>
         <!-- Servlet -->
         <dependency>
@@ -148,6 +152,16 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
             <version>1.9</version>
+        </dependency>
+        <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-transports-http</artifactId>
+        <version>${version.cxf}</version>
+        </dependency>
+        <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-frontend-jaxws</artifactId>
+        <version>${version.cxf}</version>
         </dependency>
     </dependencies>
     
